@@ -6,7 +6,14 @@ const customInput = document.getElementById('customInput');
 
 // Get results element 
 const totalAmount = document.querySelector('.total-amount')
-const totalPerson = document.querySelector('.total-person')
+const totalAmountPerPerson = document.querySelector('.total-person')
+
+
+// Function to update results
+function updateResults(tipAmount, totalAmountValue) {
+    totalAmount.textContent = `$${tipAmount.toFixed(2)}`
+    totalAmountPerPerson.textContent = `$${totalAmountValue.toFixed(2)}`
+}
 
 // Calculate tip as user enters percentage
 // billTotal * percent / amountOfPeople = result
@@ -18,7 +25,10 @@ tipInputButtons.forEach((inputButton) => {
         amount = parseFloat(billInput.value);
         people = peopleInput.value
 
-        console.log(tipPercentage)
+        const tipAmount = (tipAmount * tipPercentage) / people
+        const totalAmountValue = (amount / people) + tipAmount
+
+        updateResults(tipAmount, totalAmountValue)
     })
 })
 
