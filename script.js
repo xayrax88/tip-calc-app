@@ -15,7 +15,7 @@ function updateResults(tipAmount, totalAmountValue) {
     totalAmountPerPerson.textContent = `$${totalAmountValue.toFixed(2)}`
 }
 
-// Calculate tip as user enters percentage
+// Calculate tip as user enters %
 // billTotal * percent / amountOfPeople = result
 tipInputButtons.forEach((inputButton) => {
     inputButton.addEventListener("click", (e) => {
@@ -25,7 +25,7 @@ tipInputButtons.forEach((inputButton) => {
         amount = parseFloat(billInput.value);
         people = peopleInput.value
 
-        const tipAmount = (tipAmount * tipPercentage) / people
+        const tipAmount = (amount * tipPercentage) / people
         const totalAmountValue = (amount / people) + tipAmount
 
         updateResults(tipAmount, totalAmountValue)
@@ -33,8 +33,17 @@ tipInputButtons.forEach((inputButton) => {
 })
 
 
-// Calculate tip as user enters custom percentage
+// Calculate tip as user enters custom %
+function calculateCustomTip() {
+    amount = parseFloat(billInput.value);
+    people = peopleInput.value
+    customTipPercentage = parseFloat(customInput.value) / 100
 
+    const customTip = (amount * customTipPercentage) / people
+    const totalAmountValue = (amount / people) + customTip
+
+    updateResults(customTip, totalAmountValue)
+}
 
 
 // Clear results
