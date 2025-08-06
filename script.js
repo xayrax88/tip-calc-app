@@ -25,6 +25,12 @@ tipInputButtons.forEach((inputButton) => {
         amount = parseFloat(billInput.value);
         people = peopleInput.value
 
+        if (people <= 0) {
+            document.querySelector(".error").classList.toggle("active")
+            peopleInput.classList.toggle("error-active");
+            return
+        }
+
         const tipAmount = (amount * tipPercentage) / people
         const totalAmountValue = (amount / people) + tipAmount
 
@@ -47,3 +53,9 @@ function calculateCustomTip() {
 
 
 // Clear results
+document.querySelector('.reset-btn').addEventListener('click', () => {
+    totalAmount.innerHTML = "$0.00"
+    totalAmountPerPerson.innerHTML = "$0.00"
+    billInput.value = ""
+    peopleInput.value = ""
+})

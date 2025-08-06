@@ -9,3 +9,38 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Text styles */
+.error {
+  color: red;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.error-active {
+  display: block;
+}
+
+.error-container {
+  justify-content: space-between;
+}
+
+#peopleInput.error-active {
+  border-color: red;
+}
+
+/* Media query */
+@media screen and (min-width: 650px) {
+  .tip-container {
+    max-width: 60rem;
+    margin-inline: auto;
+    grid-template-columns: repeat(2, fr);
+  }
+  .select-buttons {
+    grid-template-columns: repeat(3, fr);
+  }
+
+  .tip-container {
+    border-radius: 2rem;
+  }
+}
