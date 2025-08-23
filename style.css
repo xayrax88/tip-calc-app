@@ -1,6 +1,21 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap");
 
+:root {
+  --strong-cyan: #26c0ab;
+  --very-dark-cyan: #00494d;
+  --dark-grayish-cyan: #5e7a7d;
+  --grayish-cyan: #7f9c9f;
+  --light-grayish-cyan: #c5e4e7;
+  --very-light-grayish-cyan: #f4fafa;
+  --white: #ffffff;
+
+  --ff: "space mono", sans-serif;
+  --fw-700: 700;
+  --fs-input: 1.5rem;
+  --fs-base: 1rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
