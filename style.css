@@ -16,6 +16,64 @@
   --fs-base: 1rem;
 }
 
+/*reset*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff);
+  font-weight: var(--dark-grayish-cyan);
+  font-size: var(--fs-base);
+  color: var(--very-dark-cyan);
+  background: var(--light-grayish-cyan);
+}
+
+button {
+  font: inherit;
+  color: var(--white);
+  background-color: var(--very-dark-cyan);
+  width: 100%;
+  display: inline-block;
+  border: none;
+  padding: 1rem;
+}
+
+input[type="number"] {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--strong-cyan);
+  background-color: var(--very-light-grayish-cyan) !important;
+}
+
+input,
+button {
+  font: inherit;
+  border-radius: 0.2rem;
+}
+
+/*Typography text style*/
+label {
+  color: var(--dark-grayish-cyan);
+}
+
+/*Ui elements*/
+#billInput {
+  background: url(images/icon-dollar.svg) no-repeat;
+  background-position: 2% 50%;
+}
+
+#peopleInput {
+  background: url(images/icon-person.svg) no-repeat;
+  background-position: 2% 50%;
+}
+
+/*FEM footer */
 .attribution {
   font-size: 11px;
   text-align: center;
