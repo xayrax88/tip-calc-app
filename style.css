@@ -31,10 +31,11 @@ body {
   font-size: var(--fs-base);
   color: var(--very-dark-cyan);
   background: var(--light-grayish-cyan);
+  padding: 4rem 0;
 }
 
 button {
-  font: inherit;
+  font-size: var(--fs-input);
   color: var(--white);
   background-color: var(--very-dark-cyan);
   width: 100%;
@@ -46,32 +47,47 @@ button {
 input[type="number"] {
   display: inline-block;
   width: 100%;
-  padding: 1rem;
+  color: var(--very-dark-cyan);
   border: 1px solid var(--strong-cyan);
   background-color: var(--very-light-grayish-cyan) !important;
+  padding: 1rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  text-align: right;
 }
 
 input,
 button {
   font: inherit;
+  font-size: var(--fs-input);
   border-radius: 0.2rem;
 }
 
 /*Typography text style*/
+.app-title {
+  text-align: center;
+  line-height: 1;
+  margin: 0 0 2rem;
+}
+
 label {
+  display: inline-block;
   color: var(--dark-grayish-cyan);
+  margin-bottom: 1rem;
 }
 
 /*Ui elements*/
 #billInput {
   background: url(images/icon-dollar.svg) no-repeat;
-  background-position: 2% 50%;
+  background-position: 2% 50%; /*2% is on the x horizontal axis and 50% is y vertical axis*/
 }
 
 #peopleInput {
   background: url(images/icon-person.svg) no-repeat;
-  background-position: 2% 50%;
+  background-position: 2% 50%; /*2% is on the x horizontal axis and 50% is y vertical axis*/
 }
+
+/*Layout styles*/
 
 /*FEM footer */
 .attribution {
