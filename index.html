@@ -19,7 +19,7 @@
 
     <h1 class="app-title">SPLI <br> TTER</h1>
 
-    <div class="tip-container">
+    <div class="tip-container grid">
       <form>
 
         <div>
@@ -37,7 +37,7 @@
         <div>
           <label for="select-tip">Select Tip %</label>
 
-          <div>
+          <div class="select-buttons grid">
             <button class="select-tip-button">5%</button>
             <button class="select-tip-button">10%</button>
             <button class="select-tip-button">15%</button>
@@ -47,26 +47,29 @@
           </div>
         </div>
 
-      </form>
-
-      <div class="total-container">
-
-        <div>
-          <div>
-            <p class="total-heading">Tip Amount <br> <small>/ person</small></p>
-            <p class="total-amount">$0.00</p>
-          </div>
+        <div class="total-container grid">
 
           <div>
-            <p class="total-heading">Total <br> <small>/ person</small></p>
-            <p class="total-person">$0.00</p>
+            <div class="flex small-total">
+              <p class="total-heading">Tip Amount <br> <small>/ person</small></p>
+              <p class="total-amount">$0.00</p>
+            </div>
+
+            <div class="flex small-total">
+              <p class="total-heading">Total <br> <small>/ person</small></p>
+              <p class="total-person">$0.00</p>
+            </div>
           </div>
+
+          <button class="reset-btn" type="reset">Reset</button>
+
         </div>
 
-        <button class="reset-btn" type="reset">Reset</button>
-
-      </div>
     </div>
+    </form>
+
+
+
 
   </main>
   <!-- Bill

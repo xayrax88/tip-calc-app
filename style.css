@@ -56,6 +56,10 @@ input[type="number"] {
   text-align: right;
 }
 
+#customInput {
+  margin: 0;
+}
+
 input,
 button {
   font: inherit;
@@ -63,11 +67,26 @@ button {
   border-radius: 0.2rem;
 }
 
+/*Supportive/reusable classes*/
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 /*Typography text style*/
+small {
+  color: var(--dark-grayish-cyan);
+}
+
 .app-title {
   text-align: center;
   line-height: 1;
   margin: 0 0 2rem;
+  letter-spacing: 1rem;
 }
 
 label {
@@ -87,7 +106,51 @@ label {
   background-position: 2% 50%; /*2% is on the x horizontal axis and 50% is y vertical axis*/
 }
 
+.reset-btn {
+  text-transform: uppercase;
+  background: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
 /*Layout styles*/
+.tip-container {
+  /* display: grid applied */
+  gap: 2rem;
+  padding: 1.5rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background: var(--white);
+}
+
+.select-buttons {
+  /* display: grid applied */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.total-container {
+  /* display: grid applied */
+  /* gap: 3rem; */
+  color: var(--white);
+  background: var(--very-dark-cyan);
+  padding: 1.75rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+
+.total-amount,
+.total-person {
+  color: var(--strong-cyan);
+  font-size: var(--fs-input);
+}
+
+.small-total {
+  justify-content: space-between;
+}
+
+.small-total:nth-of-type(2) {
+  margin-top: 2rem;
+}
 
 /*FEM footer */
 .attribution {
