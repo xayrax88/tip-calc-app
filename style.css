@@ -122,6 +122,10 @@ label {
   background: var(--white);
 }
 
+.people-container {
+  margin-top: 2rem;
+}
+
 .select-buttons {
   /* display: grid applied */
   grid-template-columns: repeat(2, 1fr);
@@ -135,7 +139,7 @@ label {
   background: var(--very-dark-cyan);
   padding: 1.75rem;
   border-radius: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .total-amount,
