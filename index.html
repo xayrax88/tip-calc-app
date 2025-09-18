@@ -44,31 +44,37 @@
           <div class="error-container flex">
             <label for="peopleInput">Number Of People</label>
             <p class="error">Can't be zero</p>
+            <input type="number" name="number-of-people" id="peopleInput">
           </div>
-          <input type="number" name="number-of-people" id="peopleInput">
+
+      </form>
+    </div>
+
+    <div class="total-container grid">
+
+      <div class="flex result-box grid">
+
+        <div>
+          <div class="flex small-total">
+            <p class="total-heading">Tip Amount <br> <small>/ person</small></p>
+            <p class="total-amount">$0.00</p>
+          </div>
+
+          <div class="flex small-total">
+            <p class="total-heading">Total <br> <small>/ person</small></p>
+            <p class="total-person">$0.00</p>
+          </div>
+
         </div>
 
 
-        <div class="total-container grid">
-
-          <div>
-            <div class="flex small-total">
-              <p class="total-heading">Tip Amount <br> <small>/ person</small></p>
-              <p class="total-amount">$0.00</p>
-            </div>
-
-            <div class="flex small-total">
-              <p class="total-heading">Total <br> <small>/ person</small></p>
-              <p class="total-person">$0.00</p>
-            </div>
-          </div>
-
-          <button class="reset-btn" type="reset">Reset</button>
-
-        </div>
+      </div>
+      <button class="reset-btn" type="reset">Reset</button>
 
     </div>
-    </form>
+
+
+
 
 
 
