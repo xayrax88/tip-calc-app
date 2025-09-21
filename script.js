@@ -15,6 +15,18 @@ function updateResults(tipAmount, totalAmountValue) {
     totalAmountPerPerson.textContent = `$${totalAmountValue.toFixed(2)}`
 }
 
+//error functions
+// function showError() {
+//     document.querySelector(".error").classList.add("active");
+//     peopleInput.classList.add("error-active");
+// }
+
+// function clearError() {
+//     document.querySelector(".error").classList.remove("active");
+//     peopleInput.classList.remove("error-active");
+// }
+
+
 // Calculate tip as user enters %
 // billTotal * percent / amountOfPeople = result
 tipInputButtons.forEach((inputButton) => {
@@ -40,6 +52,7 @@ tipInputButtons.forEach((inputButton) => {
 
 
 // Calculate tip as user enters custom %
+//parseFloat - to convert % to decimal value
 function calculateCustomTip() {
     amount = parseFloat(billInput.value);
     people = peopleInput.value
@@ -56,6 +69,8 @@ function calculateCustomTip() {
 document.querySelector('.reset-btn').addEventListener('click', () => {
     totalAmount.innerHTML = "$0.00"
     totalAmountPerPerson.innerHTML = "$0.00"
+    // customInput.innerHTML = "Custom"
     billInput.value = ""
     peopleInput.value = ""
+    customInput.value = "Custom"
 })

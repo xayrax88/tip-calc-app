@@ -111,6 +111,13 @@ label {
   text-transform: uppercase;
   background: var(--strong-cyan);
   color: var(--very-dark-cyan);
+  margin-top: 2rem;
+  opacity: 45%;
+  transition: 0.2s ease opacity;
+}
+
+.reset-btn:hover {
+  opacity: 100%;
 }
 
 .select-tip-button:hover {
@@ -152,6 +159,13 @@ label {
 
 } */
 
+.result-box {
+  align-items: initial;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 .total-amount,
 .total-person {
   color: var(--strong-cyan);
@@ -183,13 +197,12 @@ label {
   display: none;
 }
 
-.error-active {
+.error.active {
   display: block;
 }
 
 .error-container {
   justify-content: space-between;
-  display: inline-block;
 }
 
 #peopleInput.error-active {
@@ -207,15 +220,10 @@ label {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .result-box {
-    align-items: initial;
-    flex-direction: column;
-    justify-content: space-between;
-  }
   .tip-container {
     border-radius: 2rem;
   }
   .reset-btn {
-    padding: 0px;
+    margin-top: 0;
   }
 }
